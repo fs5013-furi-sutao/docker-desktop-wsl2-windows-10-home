@@ -42,5 +42,26 @@ WSL 2 を起動するためには CPU の Virtualization が有効化されて�
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform
 ```
-https://qiita.com/KoKeCross/items/a6365af2594a102a817b
+
+### WSL 2 kernel のインストール
+
+次のページから WSL2 Linux kernel update package for x64 machines（wsl_update_x64.msi）をダウンロードする。ダウンロードした msi ファイルを実行する。
+
+### WSL 2 をデフォルトバージョンにする
+
+PowerShell を開き、次のコマンドを実行して、新しい Linux ディストリビューションをインストールするときに WSL 2 をデフォルトバージョンとして設定する。
+
+```console
+wsl --set-default-version 2
+```
+
+### Linux ディストリビューションをインストール
+
+Microsoft Store から次の Linux ディストリビューションをインストールする。
+
+```
+Ubuntu 20.04 LTS
+```
+
+
 
