@@ -84,4 +84,16 @@ passwd: password updated successfully
 Installation successful!
 ```
 
+### Winsows Terminal への登録
+
+Windows Terminal を利用している場合は、Ubuntu コンソールを Windows Terminal に登録する。
+
+
+Terminal の設定への登録には GUID が必要なので、PowerShell で次のコマンドを実行して GUID を取得する。
+
+```console
+[Guid]::NewGuid()
+```
+
+
 
