@@ -130,3 +130,23 @@ https://www.docker.com/products/docker-desktop
 ダウンロードしたインストーラを実行する。 インストールの途中で表示される Configuration は `Enable WSL 2 Windows Features` のチェックを外さないようにする。
 
 ![](./configuration_docker_desktop_installation.png)
+
+WSL 2 が正しくインストールされていれば、次の 2 か所にチェックが付いていることが確認できる。
+- General 画面の `Use the WSL 2 based engine` 
+- Resources 画面の `Enable integration with my default WSL distro`  
+
+もしチェックがついていなければ、チェックを付けること。
+
+### Docker コマンド実行確認 
+
+GitBash などで次のコマンドを実行して、Docker コンテナが実行できることを確認する。
+
+```console
+docker run -dp 80:80 docker/getting-started
+```
+
+Docker コンテナが起動中の Docker Desktop の画面:
+![](./docker_desktop.png)
+
+OPEN IN BROWSER:
+
