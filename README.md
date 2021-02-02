@@ -42,5 +42,5 @@ WSL 2 を起動するためには CPU の Virtualization が有効化されて�
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform
 ```
-
+https://qiita.com/KoKeCross/items/a6365af2594a102a817b
 
