@@ -102,4 +102,31 @@ Guid
 8a2e8c53-c638-3716-7c74-c830c73e3a3a
 ```
 
+### WSL 2 の設定、実行確認
 
+インストールした Ubuntu で WSL 2 を利用するコマンドを実行できるか、PowerShell で次のコマンドを実行する。
+
+```console
+wsl --set-default-version 2
+wsl --set-version Ubuntu-20.04 2
+```
+
+```
+  NAME            STATE           VERSION
+* Ubuntu-20.04    Running         2
+```
+
+## Docker のインストール
+
+WSL 2 をインストールできたら、次は Docker をインストールする。
+
+### Docker Desktop のインストール
+
+次のページから Docker Desktop のインストーラ（Docker Desktop Installer.exe）をダウンロードする。
+
+Docker Desktop  
+https://www.docker.com/products/docker-desktop
+
+ダウンロードしたインストーラを実行する。 インストールの途中で表示される Configuration は `Enable WSL 2 Windows Features` のチェックを外さないようにする。
+
+![](./configuration_docker_desktop_installation.png)
