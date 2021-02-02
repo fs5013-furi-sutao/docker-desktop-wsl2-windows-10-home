@@ -33,3 +33,14 @@ WSL 2 を起動するためには CPU の Virtualization が有効化されて�
 もし有効（Enabled）になっていない場合は Bios を開いて CPU Configuration > Intel (AMD) Virtualization Technology: Enabled にする。
 
 ![](./task_manager.png)
+
+## Enable Windows Feature
+
+管理者モードで PowerShell を起動して次の 2 つのコマンドを実行します。再起動しないと機能が有効にならないため、コマンドを実行後に再起動する。
+
+```console
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform
+```
+
+
