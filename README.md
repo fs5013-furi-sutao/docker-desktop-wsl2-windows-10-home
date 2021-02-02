@@ -95,5 +95,11 @@ Terminal の設定への登録には GUID が必要なので、PowerShell で次
 [Guid]::NewGuid()
 ```
 
+実行結果例:
+```
+Guid
+----
+8a2e8c53-c638-3716-7c74-c830c73e3a3a
+```
 
 
