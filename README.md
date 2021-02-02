@@ -149,4 +149,4 @@ Docker コンテナが起動中の Docker Desktop の画面:
 ![](./docker_desktop.png)
 
 OPEN IN BROWSER:
-
+![](./dokcer_container_getting_started.png)
