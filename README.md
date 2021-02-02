@@ -15,4 +15,21 @@ VirtualBox の Default という VM の上で Docker コンテナを動かす形
 
 Docker Desktop は、WSL 2 の Linux 上で Docker コンテナを動かす形になる。
 
+## 環境
 
+- Windows Home 10
+- Ver. 2004 以降
+
+## WSL 2 のインストール
+
+まず最初に WSL 2 をインストールする。
+
+### Enable Virtualization  
+
+WSL 2 を起動するためには CPU の Virtualization が有効化されている必要がある。
+
+タスクマネージャーを開いて パフォーマンス > CPU 画面から、 仮想化: 有効（Virtualization: Enabled）になっていることを確認する。
+
+もし有効（Enabled）になっていない場合は Bios を開いて CPU Configuration > Intel (AMD) Virtualization Technology: Enabled にする。
+
+![](./task_manager.png)
