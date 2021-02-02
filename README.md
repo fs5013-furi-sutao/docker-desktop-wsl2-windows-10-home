@@ -74,5 +74,14 @@ Installing, this may take a few minutes...
 
 次に、新しい Linux ディストリビューションのユーザーアカウントとパスワードを作成する必要がある。
 
+```console
+Please create a default UNIX user account. The username does not need to match your Windows username.
+For more information visit: https://aka.ms/wslusers
+Enter new UNIX username: 
+New password:
+Retype new password:
+passwd: password updated successfully
+Installation successful!
+```
 
 
